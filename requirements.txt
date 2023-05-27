@@ -2,4 +2,4 @@ pre-commit
 flask
 hashids
 rm_unneeded_f_str
-flask_bootstrap 
+flask_bootstrap
