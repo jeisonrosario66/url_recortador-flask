@@ -55,10 +55,10 @@ No obtendrá ninguna salida
 
 Sin embargo puede verificar su archivo en `db/database.db`
 
-#### Importante 
+#### Importante
 `init_db.py` Cada que se ejecuta verifica que no exista la base de datos `database.db` y si existe la ELIMINA, por ello debe ser ejecutado solo 1 vez
 
-### Ejecute 
+### Ejecute
 Ahora si, no debería obtener ningún error al ejecutar la app `$ flask run`
 
 ![server on](https://github.com/jeisonrosario66/flask-guia/assets/96961824/4b46cfd6-fbd7-4e6d-8070-f5eb6de795da)
@@ -78,7 +78,7 @@ Para correr los Tests corra el siguiente comando desde la raíz del proyecto
 
 ## Soporte
 
-Para soporte, email developer@jeisonrosariodev.com 
+Para soporte, email developer@jeisonrosariodev.com
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](http://jeisonrosariodev.com/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jeison-rosario-0488a7253/)
@@ -88,4 +88,3 @@ Para soporte, email developer@jeisonrosariodev.com
 ## Autor
 
 - [@jeisonrosario66](https://github.com/jeisonrosario66)
-

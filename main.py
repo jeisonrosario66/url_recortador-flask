@@ -29,6 +29,7 @@ def get_db_connection():
 # Instancia de la app flask
 app = Flask(__name__)
 
+
 # Genera una cadena aletoria
 random_KEY = "".join(random.choice(string.printable) for i in range(30))
 app.config["SECRET_KEY"] = random_KEY
@@ -96,6 +97,7 @@ def url_redirect(id):
     original_id = hashids.decode(id)
     if original_id:
         original_id = original_id[0]
+
         url_data = conex.execute(
             "SELECT url_original, clicks FROM urls" " WHERE id = (?)", (original_id,)
         ).fetchone()
@@ -129,3 +131,14 @@ def stats():
         urls.append(url)
 
     return render_template("stats.html", urls=urls)
+
+
+# Este decorador recibe un numero de error
+@app.errorhandler(400)
+def not_found(error):
+    return render_template("400.html", error=error)
+
+
+@app.errorhandler(404)
+def not_found(error):
+    return render_template("400.html", error=error)
