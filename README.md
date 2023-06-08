@@ -9,6 +9,12 @@ Construido con `Flask`
 
 ![app 2](https://github.com/jeisonrosario66/flask-guia/assets/96961824/2d20fdcf-730b-426c-8707-db2c35affbca)
 
+## Ejecutar con Docker
+Ejecutar `sudo python3 run.py` es todo lo que necesita 
+
+![Captura de pantalla 2023-06-08 043052](https://github.com/jeisonrosario66/url_recortador-flask/assets/96961824/39567066-35f4-4a2c-9373-fb4a9547eda9)
+
+
 ## Ejecutar
 
 ```bash
