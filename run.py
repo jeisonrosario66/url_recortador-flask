@@ -1,4 +1,5 @@
 import os
+
 from db.init_db import db_create
 
 
@@ -14,16 +15,20 @@ def clearWindow():
 clearWindow()
 
 while True:
+
     def menuView():
         print("\t\t.:Acortador de URLs - Docker:.\n")
-        print("""
+        print(
+            """
             -Opciones
             1.) Compose up
             2.) Correr container
             3.) Verificar Base de datos
             4.) Crear Base de datos
             5.) Eliminar Base de datos
-            0.) Salir\n""")
+            0.) Salir\n"""
+        )
+
     menuView()
     try:
         opc = int(input("ingrese una opcion: "))
@@ -38,7 +43,7 @@ while True:
     elif opc == 1:
         clearWindow()
         try:
-            dataBase = open('db/database.db')
+            dataBase = open("db/database.db")
             print("La base de datos existe")
             dataBase.close()
             print("Ejecutando 'docker compose up'")
@@ -55,7 +60,7 @@ while True:
         # Comprueba que exista la base de datos
         clearWindow()
         try:
-            dataBase = open('db/database.db')
+            dataBase = open("db/database.db")
             print("La base de datos ya existe")
             dataBase.close()
         except FileNotFoundError:
@@ -63,7 +68,7 @@ while True:
     elif opc == 4:
         clearWindow()
         try:
-            dataBase = open('db/database.db')
+            dataBase = open("db/database.db")
             print("La base de datos ya existe")
             dataBase.close()
         except FileNotFoundError:

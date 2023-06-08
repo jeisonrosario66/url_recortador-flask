@@ -3,7 +3,6 @@ import sqlite3
 
 
 def db_create():
-
     connection = sqlite3.connect("database.db")
 
     with open("db/schema.sql") as f:
